@@ -270,6 +270,37 @@ const observer = new IntersectionObserver((entries) => {
 }, { threshold: 0.15 });
 reveals.forEach((element) => observer.observe(element));
 
+// Splash preloader with a cinematic fade into the landing experience.
+const preloader = document.getElementById('preloader');
+const progressBar = document.getElementById('preloader-progress');
+const startTime = Date.now();
+const minimumDuration = 2500;
+
+function finishLoader() {
+  const elapsed = Date.now() - startTime;
+  const remaining = Math.max(0, minimumDuration - elapsed);
+  window.setTimeout(() => {
+    if (preloader) {
+      preloader.classList.add('hidden');
+    }
+  }, remaining);
+}
+
+let progress = 0;
+const timer = window.setInterval(() => {
+  progress += 6;
+  if (progressBar) progressBar.style.width = `${Math.min(progress, 100)}%`;
+  if (progress >= 100) {
+    window.clearInterval(timer);
+    finishLoader();
+  }
+}, 120);
+window.addEventListener('load', () => {
+  progress = 100;
+  if (progressBar) progressBar.style.width = '100%';
+  finishLoader();
+});
+
 // Load services, bookings, and admin state from localStorage on startup.
 renderServices();
 renderBookings();

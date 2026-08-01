@@ -11,6 +11,15 @@
     <link rel="stylesheet" href="/styles.css" />
   </head>
   <body>
+    <div class="preloader" id="preloader" aria-hidden="true">
+      <div class="preloader-content">
+        <img class="preloader-logo" src="/logo.svg" alt="Lavish Men's Saloon logo" />
+        <div class="preloader-bar">
+          <span id="preloader-progress"></span>
+        </div>
+      </div>
+    </div>
+
     <div class="bg-orb orb-one" aria-hidden="true"></div>
     <div class="bg-orb orb-two" aria-hidden="true"></div>
 
@@ -21,16 +30,7 @@
 
     <header class="site-header glass-panel">
       <a class="brand" href="#hero" aria-label="Lavish home">
-        <div class="brand-mark" aria-hidden="true">
-          <svg viewBox="0 0 64 64" role="img" aria-label="Luxury icon">
-            <path d="M15 40c4-10 8-16 12-19 4 3 8 7 13 12 5 5 8 8 11 10-4 2-10 3-16 3-7 0-14-2-20-6Z" />
-            <path d="M24 18c4-6 8-8 13-8 4 0 8 2 10 4" />
-            <path d="M31 20c-2-5-6-8-10-10" />
-            <path d="M27 33c5 3 10 3 15 0" />
-            <path d="M19 43c7-1 12-1 20 0" />
-            <path d="M22 47c5 2 11 3 18 2" />
-          </svg>
-        </div>
+        <img class="brand-logo" src="/logo.svg" alt="Lavish Men's Saloon logo" />
         <div>
           <h1>LAVISH</h1>
           <p>Men's Grooming & Facial Lounge</p>

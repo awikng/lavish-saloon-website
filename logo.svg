@@ -1,0 +1,27 @@
+<svg width="1200" height="340" viewBox="0 0 1200 340" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Lavish Men's Saloon logo">
+  <defs>
+    <linearGradient id="goldStroke" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f4df9b" />
+      <stop offset="50%" stop-color="#d6a43b" />
+      <stop offset="100%" stop-color="#ffefb6" />
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="340" rx="40" fill="#121212" />
+
+  <g transform="translate(44 40)">
+    <circle cx="110" cy="110" r="94" fill="none" stroke="url(#goldStroke)" stroke-width="7" />
+    <path d="M82 116c24-42 52-63 94-74 15 10 26 24 34 43-20 9-39 15-56 20-18 5-34 9-48 15-8-9-16-15-24-24Z" fill="#0a0a0a" stroke="url(#goldStroke)" stroke-width="5" stroke-linejoin="round" />
+    <path d="M122 94c7-21 18-33 35-44 11 8 19 19 24 32-13 8-24 15-35 23-12 7-19 8-24-11Z" fill="#111111" stroke="url(#goldStroke)" stroke-width="5" stroke-linejoin="round" />
+    <path d="M154 120c11-11 22-17 35-20 9 9 18 18 27 31-12 7-24 12-36 16-12 3-20 2-26-27Z" fill="#0f0f0f" stroke="url(#goldStroke)" stroke-width="5" stroke-linejoin="round" />
+    <path d="M86 140c18 6 33 10 49 9 22-2 39-7 58-16 2 13-4 24-12 34-17 19-37 28-61 29-24 2-44-7-61-23-8-8-11-21-3-33Z" fill="#080808" stroke="url(#goldStroke)" stroke-width="5" stroke-linejoin="round" />
+    <path d="M98 150c12 12 24 18 38 21" fill="none" stroke="url(#goldStroke)" stroke-width="4" stroke-linecap="round" />
+    <path d="M152 151c16 5 31 6 44 2" fill="none" stroke="url(#goldStroke)" stroke-width="4" stroke-linecap="round" />
+    <path d="M92 116c10-10 20-17 30-23" fill="none" stroke="url(#goldStroke)" stroke-width="4" stroke-linecap="round" />
+    <path d="M143 89c9-6 18-10 30-12" fill="none" stroke="url(#goldStroke)" stroke-width="4" stroke-linecap="round" />
+    <path d="M98 167c4 4 9 7 15 8" fill="none" stroke="url(#goldStroke)" stroke-width="4" stroke-linecap="round" />
+  </g>
+
+  <text x="290" y="155" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="88" font-weight="700" letter-spacing="8" fill="#f3d27a">LAVISH</text>
+  <text x="290" y="235" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="54" font-weight="600" letter-spacing="5" fill="#f6e5b6">MEN'S SALOON</text>
+</svg>
