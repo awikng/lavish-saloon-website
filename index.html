@@ -3,41 +3,26 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Lavish Men's Salon & Facial Lounge</title>
-    <meta
-      name="description"
-      content="Premium grooming, executive haircuts, and specialized facial treatments for men."
-    />
+    <meta name="description" content="Luxury salon booking experience with premium grooming, facials, and a polished admin dashboard." />
+    <title>Lavish Salon | Premium Grooming & Facial Lounge</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="/styles.css" />
   </head>
   <body>
-    <div class="background-ambient" aria-hidden="true">
-      <div class="blade blade-a"></div>
-      <div class="blade blade-b"></div>
-      <div class="blade blade-c"></div>
-      <div class="blade blade-d"></div>
-    </div>
+    <div class="bg-orb orb-one" aria-hidden="true"></div>
+    <div class="bg-orb orb-two" aria-hidden="true"></div>
 
     <div class="promo-banner">
       <span>✦</span>
-      First Time Guest Special: Get 15% OFF Any Facial Treatment This Week!
+      First-time guest special: 15% off any facial treatment this week.
     </div>
 
-
-    <header class="site-header">
-      <a class="brand brand-link" href="#hero" aria-label="Lavish home">
+    <header class="site-header glass-panel">
+      <a class="brand" href="#hero" aria-label="Lavish home">
         <div class="brand-mark" aria-hidden="true">
-          <svg viewBox="0 0 64 64" role="img" aria-label="Tiger icon">
-            <defs>
-              <linearGradient id="goldStroke" x1="0%" y1="0%" x2="100%" y2="100%">
-                <stop offset="0%" stopColor="#c59b27" />
-                <stop offset="55%" stopColor="#f2d16b" />
-                <stop offset="100%" stopColor="#f5d77f" />
-              </linearGradient>
-            </defs>
+          <svg viewBox="0 0 64 64" role="img" aria-label="Luxury icon">
             <path d="M15 40c4-10 8-16 12-19 4 3 8 7 13 12 5 5 8 8 11 10-4 2-10 3-16 3-7 0-14-2-20-6Z" />
             <path d="M24 18c4-6 8-8 13-8 4 0 8 2 10 4" />
             <path d="M31 20c-2-5-6-8-10-10" />
@@ -53,186 +38,217 @@
       </a>
 
       <div class="header-actions">
-        <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Toggle dark mode">
-          ☀︎
-        </button>
-        <nav class="nav-links">
-          <a href="#services">Services & Pricing</a>
-          <a class="btn-nav" href="#booking">Book Appointment</a>
-        </nav>
+        <button class="icon-btn" id="theme-toggle" type="button" aria-label="Toggle color theme">☀︎</button>
+        <button class="icon-btn admin-btn" id="open-admin" type="button">Admin</button>
       </div>
     </header>
 
     <main>
-      <section class="hero" id="hero">
+      <section class="hero reveal" id="hero">
         <div class="hero-content">
-          <span class="pill">★ Premier Skincare & Grooming Sanctuary</span>
-          <h2 class="hover-target">Refine Your Look. <span>Rejuvenate Your Skin.</span></h2>
-          <p>
-            Experience specialized facial treatments, precision haircuts, and hot towel beard styling crafted exclusively for the modern gentleman.
-          </p>
-
+          <span class="pill">★ Premier skincare & grooming sanctuary</span>
+          <h2>Refine your look.<br /><span>Rejuvenate your skin.</span></h2>
+          <p>Experience precision haircuts, luxury facials, and spa-inspired beard sculpting designed for the modern gentleman.</p>
           <div class="hero-actions">
-            <a class="btn primary" href="#booking">Book Your Session</a>
-            <a class="btn secondary" href="#services">Explore Treatments</a>
+            <a class="btn btn-primary" href="#booking">Book Your Session</a>
+            <a class="btn btn-secondary" href="#services">Explore Treatments</a>
           </div>
 
           <div class="stats-grid">
-            <div>
+            <div class="glass-panel stat-card">
               <h3>5,000+</h3>
-              <p>Satisfied Clients</p>
+              <p>Elite clients served</p>
             </div>
-            <div>
+            <div class="glass-panel stat-card">
               <h3>Certified</h3>
-              <p>Male Estheticians</p>
+              <p>Male estheticians</p>
             </div>
-            <div>
+            <div class="glass-panel stat-card">
               <h3>100% Organic</h3>
-              <p>Skincare Formulas</p>
+              <p>Skincare formulas</p>
             </div>
           </div>
         </div>
       </section>
 
-      <section id="services" class="services-section">
+      <section class="section reveal" id="about">
         <div class="section-heading">
-          <h3 class="hover-target">Our Specialty Menu</h3>
-          <p>Select a category to view specialized treatments designed for men</p>
-
-          <div class="category-tabs">
-            <button class="category-btn active" data-category="All">All</button>
-            <button class="category-btn" data-category="Facial">Facial</button>
-            <button class="category-btn" data-category="Hair">Hair</button>
-            <button class="category-btn" data-category="Grooming">Grooming</button>
-            <button class="category-btn" data-category="VIP Package">VIP Package</button>
-          </div>
+          <span class="eyebrow">Why Lavish</span>
+          <h3>Crafted for comfort, detail, and confidence.</h3>
+          <p>Every appointment blends luxury touchpoints, premium products, and thoughtful service.</p>
         </div>
-
-        <div class="service-grid">
-          <article class="service-card featured" data-category="Facial">
-            <span class="badge">Most Popular</span>
-            <div class="service-title-row">
-              <h4>Lavish Signature Deep Cleanse Facial</h4>
-              <span class="price">$65</span>
-            </div>
-            <div class="service-meta">⏱ 45 mins</div>
-            <p>Customized deep cleansing, steaming, ultrasonic blackhead extraction, and hydra-boosting gel mask tailored specifically for men's skin.</p>
-            <button class="select-btn" data-service="Lavish Signature Deep Cleanse Facial">Select Treatment</button>
+        <div class="feature-grid">
+          <article class="glass-panel feature-card">
+            <h4>Tailored Consultations</h4>
+            <p>Personalized reviews for your hair, skin, and grooming goals before every treatment.</p>
           </article>
-
-          <article class="service-card featured" data-category="Facial">
-            <span class="badge">Most Popular</span>
-            <div class="service-title-row">
-              <h4>24K Gold Rejuvenating Facial</h4>
-              <span class="price">$90</span>
-            </div>
-            <div class="service-meta">⏱ 60 mins</div>
-            <p>Anti-aging luxury treatment with 24K gold foil infusion, peptide therapy, and facial massage to reverse fatigue and reduce dark circles.</p>
-            <button class="select-btn" data-service="24K Gold Rejuvenating Facial">Select Treatment</button>
+          <article class="glass-panel feature-card">
+            <h4>Luxury Atmosphere</h4>
+            <p>Frosted interiors, warm lighting, and a calm environment that feels unmistakably premium.</p>
           </article>
-
-          <article class="service-card" data-category="Facial">
-            <div class="service-title-row">
-              <h4>Activated Charcoal Detox Treatment</h4>
-              <span class="price">$55</span>
-            </div>
-            <div class="service-meta">⏱ 40 mins</div>
-            <p>Pore-tightening charcoal mask, exfoliation, and sebum control serum to eliminate excess oils and razor bump irritation.</p>
-            <button class="select-btn" data-service="Activated Charcoal Detox Treatment">Select Treatment</button>
-          </article>
-
-          <article class="service-card" data-category="Hair">
-            <div class="service-title-row">
-              <h4>Executive Precision Haircut</h4>
-              <span class="price">$45</span>
-            </div>
-            <div class="service-meta">⏱ 35 mins</div>
-            <p>Consultation, custom tailored fade/cut, peppermint shampoo scalp wash, and premium matte clay styling.</p>
-            <button class="select-btn" data-service="Executive Precision Haircut">Select Treatment</button>
-          </article>
-
-          <article class="service-card" data-category="Grooming">
-            <div class="service-title-row">
-              <h4>Hot Towel Beard Sculpture & Spa</h4>
-              <span class="price">$40</span>
-            </div>
-            <div class="service-meta">⏱ 30 mins</div>
-            <p>Straight razor outline, essential oil hot towel treatment, beard trimming, and deep conditioning beard oil massage.</p>
-            <button class="select-btn" data-service="Hot Towel Beard Sculpture & Spa">Select Treatment</button>
-          </article>
-
-          <article class="service-card featured" data-category="VIP Package">
-            <span class="badge">Most Popular</span>
-            <div class="service-title-row">
-              <h4>The Lavish VIP Presidential Package</h4>
-              <span class="price">$150</span>
-            </div>
-            <div class="service-meta">⏱ 105 mins</div>
-            <p>Full Signature Facial + Executive Haircut + Hot Towel Beard Spa + Scalp & Shoulder Stress Relief Massage.</p>
-            <button class="select-btn" data-service="The Lavish VIP Presidential Package">Select Treatment</button>
+          <article class="glass-panel feature-card">
+            <h4>Effortless Booking</h4>
+            <p>Reserve your session in seconds and receive instant confirmation in our admin dashboard.</p>
           </article>
         </div>
       </section>
 
-      <section id="booking" class="booking-section">
-        <div class="booking-card">
-          <div class="booking-heading">
-            <h3 class="hover-target">Reserve Your Appointment</h3>
-            <p>Fill in your details below and our team will confirm your slot</p>
+      <section class="section reveal" id="services">
+        <div class="section-heading">
+          <span class="eyebrow">Signature Menu</span>
+          <h3>Choose your ritual.</h3>
+          <p>Elegant services and transparent pricing tailored for modern men.</p>
+        </div>
+        <div class="service-grid" id="service-grid"></div>
+      </section>
+
+      <section class="section reveal" id="booking">
+        <div class="booking-card glass-panel">
+          <div class="section-heading left-align">
+            <span class="eyebrow">Book Now</span>
+            <h3>Reserve your appointment.</h3>
+            <p>We’ll confirm your preferred slot shortly after you submit your request.</p>
           </div>
 
           <form class="booking-form" id="booking-form">
-            <div>
+            <div class="field-group">
               <label for="client-name">Full Name *</label>
-              <input id="client-name" name="clientName" type="text" placeholder="e.g. Alex Mercer" required />
+              <input id="client-name" name="clientName" type="text" placeholder="Alex Mercer" required />
             </div>
-
-            <div>
+            <div class="field-group">
               <label for="client-phone">Phone Number *</label>
               <input id="client-phone" name="clientPhone" type="tel" placeholder="+1 (555) 000-0000" required />
             </div>
-
-            <div>
-              <label for="service-select">Select Treatment Service</label>
+            <div class="field-group">
+              <label for="service-select">Treatment Service</label>
               <select id="service-select" name="service">
-                <option value="">-- Choose a facial or grooming service --</option>
-                <option value="Lavish Signature Deep Cleanse Facial">Lavish Signature Deep Cleanse Facial ($65)</option>
-                <option value="24K Gold Rejuvenating Facial">24K Gold Rejuvenating Facial ($90)</option>
-                <option value="Activated Charcoal Detox Treatment">Activated Charcoal Detox Treatment ($55)</option>
-                <option value="Executive Precision Haircut">Executive Precision Haircut ($45)</option>
-                <option value="Hot Towel Beard Sculpture & Spa">Hot Towel Beard Sculpture & Spa ($40)</option>
-                <option value="The Lavish VIP Presidential Package">The Lavish VIP Presidential Package ($150)</option>
+                <option value="">-- Select a service --</option>
               </select>
             </div>
-
             <div class="form-row">
-              <div>
+              <div class="field-group">
                 <label for="preferred-date">Preferred Date</label>
                 <input id="preferred-date" name="preferredDate" type="date" />
               </div>
-              <div>
+              <div class="field-group">
                 <label for="preferred-time">Preferred Time</label>
                 <input id="preferred-time" name="preferredTime" type="time" />
               </div>
             </div>
-
-            <button type="submit">Confirm Appointment Request</button>
+            <button class="btn btn-primary full-width" type="submit">Confirm Appointment Request</button>
           </form>
 
-          <div class="success-message" id="success-message">
-            <h4>Booking Request Received!</h4>
+          <div class="success-message" id="success-message" aria-live="polite">
+            <h4>Request received.</h4>
             <p id="success-text"></p>
-            <button id="book-another" type="button">Book Another Service</button>
+            <button id="book-another" class="btn btn-secondary" type="button">Book Another Service</button>
           </div>
         </div>
       </section>
     </main>
 
     <footer class="site-footer">
-      <p>LAVISH MEN'S SALON & FACIAL LOUNGE</p>
-      <p>Premium grooming, executive haircuts, and specialized facial treatments for men.</p>
-      <p>© 2026 Lavish Men's Salon. Built with HTML, CSS & JavaScript.</p>
+      <p>Lavish Men's Salon & Facial Lounge</p>
+      <p>© <span id="year"></span> Lavish. Luxury grooming experiences, built to feel effortless.</p>
     </footer>
+
+    <div class="admin-modal" id="admin-modal" aria-hidden="true">
+      <div class="admin-panel glass-panel" role="dialog" aria-modal="true" aria-labelledby="admin-title">
+        <button class="close-admin" id="close-admin" type="button" aria-label="Close admin panel">×</button>
+        <div id="admin-login-view">
+          <div class="section-heading left-align">
+            <span class="eyebrow">Secure Access</span>
+            <h3 id="admin-title">Admin Login</h3>
+            <p>Manage bookings, services, and password updates from one elegant dashboard.</p>
+          </div>
+          <form class="admin-form" id="admin-login-form">
+            <div class="field-group">
+              <label for="admin-username">Username</label>
+              <input id="admin-username" name="adminUsername" type="text" required />
+            </div>
+            <div class="field-group">
+              <label for="admin-password">Password</label>
+              <input id="admin-password" name="adminPassword" type="password" required />
+            </div>
+            <button class="btn btn-primary full-width" type="submit">Access Dashboard</button>
+            <p class="form-note" id="admin-login-message"></p>
+          </form>
+        </div>
+
+        <div id="admin-dashboard-view" hidden>
+          <div class="section-heading left-align">
+            <span class="eyebrow">Control Center</span>
+            <h3>Admin Dashboard</h3>
+            <p>Review appointments, update service pricing, and secure your credentials.</p>
+          </div>
+
+          <div class="dashboard-grid">
+            <section class="glass-panel dashboard-card">
+              <div class="card-head">
+                <h4>Incoming Bookings</h4>
+                <span class="pill small" id="booking-count">0</span>
+              </div>
+              <div id="bookings-list" class="stack-list"></div>
+            </section>
+
+            <section class="glass-panel dashboard-card">
+              <div class="card-head">
+                <h4>Manage Services</h4>
+                <span class="pill small">Live</span>
+              </div>
+              <form class="admin-form" id="service-form">
+                <input type="hidden" id="service-id" />
+                <div class="field-group">
+                  <label for="service-title">Service Name</label>
+                  <input id="service-title" type="text" required />
+                </div>
+                <div class="field-group">
+                  <label for="service-price">Price</label>
+                  <input id="service-price" type="number" min="0" step="1" required />
+                </div>
+                <div class="field-group">
+                  <label for="service-duration">Duration</label>
+                  <input id="service-duration" type="text" placeholder="45 mins" required />
+                </div>
+                <div class="field-group">
+                  <label for="service-category">Category</label>
+                  <input id="service-category" type="text" placeholder="Facial" required />
+                </div>
+                <div class="field-group">
+                  <label for="service-description">Description</label>
+                  <textarea id="service-description" rows="3" required></textarea>
+                </div>
+                <button class="btn btn-primary full-width" type="submit">Save Service</button>
+              </form>
+              <div id="service-list" class="stack-list"></div>
+            </section>
+          </div>
+
+          <section class="glass-panel dashboard-card password-card">
+            <div class="card-head">
+              <h4>Change Password</h4>
+              <span class="pill small">Secure</span>
+            </div>
+            <form class="admin-form" id="password-form">
+              <div class="field-group">
+                <label for="current-password">Current Password</label>
+                <input id="current-password" type="password" required />
+              </div>
+              <div class="field-group">
+                <label for="new-password">New Password</label>
+                <input id="new-password" type="password" required />
+              </div>
+              <button class="btn btn-primary full-width" type="submit">Update Password</button>
+              <p class="form-note" id="password-message"></p>
+            </form>
+          </section>
+
+          <div class="admin-actions">
+            <button class="btn btn-secondary" id="logout-admin" type="button">Logout</button>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <script src="/script.js"></script>
   </body>
