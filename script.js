@@ -127,8 +127,11 @@ function setAdminView(isLoggedIn) {
 }
 
 function openAdminPanel() {
+  if (!adminModal) return;
   adminModal.classList.add('active');
   adminModal.setAttribute('aria-hidden', 'false');
+  adminModal.style.display = 'flex';
+  document.body.style.overflow = 'hidden';
   if (isAdminLoggedIn) {
     setAdminView(true);
     renderBookings();
@@ -139,14 +142,33 @@ function openAdminPanel() {
 }
 
 function closeAdminPanel() {
+  if (!adminModal) return;
   adminModal.classList.remove('active');
   adminModal.setAttribute('aria-hidden', 'true');
+  adminModal.style.display = 'none';
+  document.body.style.overflow = '';
+}
+
+function applyTheme(theme) {
+  const isLight = theme === 'light';
+  document.body.classList.toggle('light-mode', isLight);
+  if (themeToggle) {
+    themeToggle.textContent = isLight ? '☾' : '☀︎';
+  }
+}
+
+const savedTheme = localStorage.getItem('theme');
+if (savedTheme) {
+  applyTheme(savedTheme);
+} else {
+  applyTheme('dark');
 }
 
 if (themeToggle) {
   themeToggle.addEventListener('click', () => {
-    document.body.classList.toggle('light-mode');
-    const isLight = document.body.classList.contains('light-mode');
+    const isLight = document.body.classList.toggle('light-mode');
+    const theme = isLight ? 'light' : 'dark';
+    localStorage.setItem('theme', theme);
     themeToggle.textContent = isLight ? '☾' : '☀︎';
   });
 }
